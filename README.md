@@ -5,7 +5,7 @@ Welcome to my **Data Structures and Algorithms (DSA) portfolio**.
 This repository is a curated collection of my work, demonstrating a systematic approach to mastering the fundamental concepts of computer science and applying them to **practical, interview-style problems**.
 
 The solutions are implemented in both:  
-- **C++** → for deep, foundational understanding and performance.  
+- **C++** → for foundational understanding and performance.  
 - **Python** → for rapid, idiomatic problem-solving.  
 
 ---
@@ -23,5 +23,3 @@ The solutions are implemented in both:
 
 This structure allows for a clear view of both **theoretical understanding** and **practical application**.
 
-
-This structure allows for a clear view of both **theoretical understanding** and **practical application**.
