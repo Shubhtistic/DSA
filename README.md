@@ -14,7 +14,7 @@ The solutions are implemented in both:
 
 
 - **cpp/**: Focuses on performance and deep understanding of the mechanics of each data structure.  
-  - **coursework/**: Implementations of core data structures and algorithms from a structured course of study.  
+  - **coursework/**: Contains structured implementations of core data structures and algorithms, following Abdul Bari’s DSA course.
   - **problems/**: Solutions to practical challenges from platforms like LeetCode and other sources.  
 
 - **python/**: Contains Python solutions, emphasizing clean, efficient, and "Pythonic" approaches.
