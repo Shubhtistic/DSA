@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <unordered_set>
+#include<map>
 using namespace std;
 
 // this question aks to return true if one element is present more than once
@@ -11,7 +12,7 @@ using namespace std;
 // we cancel out one index at a time if its unique so we dont iterate over it again
 // this function works but will give TLE
 // T.C -> O(n^2)
-// S.C -> O(n^2)
+// S.C -> O(1)
 bool brute_force(const vector<int> &nums)
 {
     for (int i = 0; i < nums.size(); ++i)
@@ -64,6 +65,27 @@ bool using_set_betterANDoptimal(const vector<int> &nums)
     }
     return true;
 }
+
+
+bool using_map_betterANDoptimal(const vector<int> &nums)
+{ // better or optimal solution
+    map <int,int> my_map;
+
+   
+
+    for (auto temp : nums)
+    {
+        my_map[temp]+=1;
+        if(my_map[temp]>1){
+            return true;
+        }
+    }
+
+    return false;
+}
+
+// another better or kind of optimal approch is using an hashmap counter 
+// simple store elements with their and if any element is greater than 1 return true
 int main()
 {
     vector<int> nums = {2, 3, 4, 5, 6, 7, 7, 8};
@@ -74,6 +96,11 @@ int main()
     if (using_set_betterANDoptimal(nums))
     {
         cout << "Contains Duplicates\n";
+    }
+
+    if (using_map_betterANDoptimal(nums)){
+        cout << "Contains Duplicates\n";
+        
     }
     return 0;
 }
