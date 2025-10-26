@@ -79,8 +79,29 @@ def optimal(nums):
     # The remaining XOR result is the missing number
     return xor_all ^ xor_nums
 
+# there is an another optimal approch
+# simply find sum of the array and the range subtract it and the answer is the missing number
+# example
+#nums = [3, 0, 1]
+# n = len(nums) = 3
+# Full range sum = 0 + 1 + 2 + 3 = 6
+# Array sum = 3 + 0 + 1 = 4
+# Missing number = 6 - 4 = 2
+# T.C -> O(n)
+# S.C -> O(1)
+
+def optimal_using_sum(nums:list)->int:
+    array_sum=0
+    for item in nums:
+        array_sum+=item
+    range_sum=0
+    for i in range(0,len(nums)+1):
+        range_sum+=i
+    return range_sum-array_sum
 
 l=[1,2,3,4,5,0]
 
 print(easy_approach(l))
 print(optimal(l))
+print(optimal_using_sum(l))
+
