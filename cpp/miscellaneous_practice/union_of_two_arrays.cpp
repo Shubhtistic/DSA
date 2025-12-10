@@ -39,32 +39,16 @@ vector<int> unionArray_set(const vector<int> &nums1, const vector<int> &nums2)
 {
     unordered_set<int> s;
 
-    // Step 1: Insert all elements from both arrays
     for (int x : nums1)
         s.insert(x);
     for (int x : nums2)
         s.insert(x);
 
-    // Step 2: Convert set to vector
     vector<int> result(s.begin(), s.end());
 
-    // Step 3: Sort the vector to maintain ascending order
     sort(result.begin(), result.end());
 
     return result;
-}
-
-int main()
-{
-    vector<int> nums1 = {1, 2, 3, 44, 4, 4, 5};
-    vector<int> nums2 = {2, 3, 5, 6, 7, 8};
-
-    vector<int> unionArr = unionArray_set(nums1, nums2);
-    for (int x : unionArr)
-        cout << x << " ";
-    cout << endl;
-
-    return 0;
 }
 
 int main()
