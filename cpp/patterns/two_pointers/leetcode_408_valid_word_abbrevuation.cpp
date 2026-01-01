@@ -72,15 +72,17 @@ bool validWordAbbreviation(string word, string abbr)
                 // early exist if the digit makes 'i' exceed word size
             }
         }
-
-        if (word[i] != abbr[j])
-        {
-            return false;
-        }
         else
         {
-            i++;
-            j++;
+            if (word[i] != abbr[j])
+            {
+                return false;
+            }
+            else
+            {
+                i++;
+                j++;
+            }
         }
     }
 
