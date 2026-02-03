@@ -71,6 +71,8 @@ so we lost 2 and added 5 , so we can do 5 -2 + 5 = 8 .. exact answer
 And so on for remaining windows
 */
 
+// T.C -> O(n)
+// S.C -> O(1)
 int maxSubarraySum(vector<int> &arr, int k)
 {
     // code here
