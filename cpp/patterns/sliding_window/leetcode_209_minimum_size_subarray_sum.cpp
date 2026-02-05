@@ -14,7 +14,7 @@ using namespace std;
 So what we can do start the low and high ptrs from the start and keep expanding the window until subarray sum >= target
 after this we shift low ahead to see if we can more smaller length subarray and we repeat this until end*/
 
-// T.C -> O(n^2)
+// T.C -> O(n)
 // S.C -> O(1)
 
 int minSubArrayLen(int target, vector<int> &nums)
@@ -47,6 +47,6 @@ int main()
 {
     vector<int> nums = {2, 3, 4, 5, 7, 8, 9};
 
-    cout << minSubArrayLen(5, nums)<<endl;
+    cout << minSubArrayLen(5, nums) << endl;
     return 0;
 }
