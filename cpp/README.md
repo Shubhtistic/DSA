@@ -1,11 +1,11 @@
-# ⚡ C++ Data Structures & Algorithms
+# C++ Data Structures & Algorithms
 
 This directory contains my C++ solutions, separated by their learning objective.  
 The focus is on creating **correct, efficient, and well-documented implementations**.
 
 ---
 
-## 📂 Folder Breakdown
+## Folder Breakdown
 
 ### `coursework/`
 This folder contains my implementations of **fundamental data structures and algorithms**, organized by topic (e.g., Arrays, LinkedLists, Trees).  
