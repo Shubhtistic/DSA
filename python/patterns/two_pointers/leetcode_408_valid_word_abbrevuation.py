@@ -36,6 +36,9 @@
 # now both ptr are equal to size of their respective strings
 # so we can this is valid abbr for this word
 
+# T.C -> O(n)
+# S.C -> O(1)
+
 
 def validWordAbbreviation(self, word: str, abbr: str) -> bool:
     w: int = 0
