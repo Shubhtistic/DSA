@@ -25,7 +25,6 @@ the we reverse and check if they are same*/
 bool simple_approach(string &n)
 {
     string n1 = n;
-    // Write your code here.
 
     for (int i = 0; i < n.size(); i++)
     {
@@ -65,7 +64,7 @@ bool simple_approach(string &n)
 
 // Optimal Two Pointer Approach
 
-/*Its very easy once you understand, what we will do is we use two pinters at extreme ends
+/*Its very easy once you understand, what we will do is we use two pointers at extreme ends
 we will compare one by one , if the numbers are 6 and 9 then we will check its strobogrammatic number at other pointer
 if does not exist we just return false at that moment, if numbers are 1,0 and 8 we wheck if other pointer has same value
 we just move both pointers in such case and if we encounter non-strobogrammatic number we return false at that moment*/
@@ -75,7 +74,6 @@ we just move both pointers in such case and if we encounter non-strobogrammatic 
 
 bool optimal(string &n)
 {
-    // Write your code here.
     int i = 0;
     int j = n.size() - 1;
 
