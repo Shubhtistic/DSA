@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
-// this question can be termned as an easy version of leetcode 75 -> sort colours
+// Note:- the question is kind of a prerequisite for leetcode 75 -> sort color
+// if it feels too easy you may skip
 // Problem statement
 /*we will be given an array of 0s and 1s we have to sort them without using any library function */
 
