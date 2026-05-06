@@ -13,7 +13,6 @@ The solutions are implemented in both:
 ## Repository Structure
 
 - **cpp/**: Focuses on performance and deep understanding of the mechanics of each data structure.  
-  - **coursework/**: Contains structured implementations of core data structures and algorithms, following Abdul Bari’s DSA course.
   - **patterns/**: Solutions organized by reusable **coding patterns** (e.g., Sliding Window, Two Pointers).
   - **miscellaneous_practice/**: It contains a collection of mixed practice problems, i used to do initially.
 
